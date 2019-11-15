@@ -5,7 +5,8 @@ import SEO from "../components/seo";
 
 export default class PostTemplate extends Component {
     render() {
-        const currentPage = this.props.data.wordpressPage;
+        const currentPage = this.props.data.wordpressPost;
+        console.log(currentPage);
         return (
             <Layout>
                 <SEO title={currentPage.yoast_meta.yoast_wpseo_title} description={currentPage.yoast_meta.yoast_wpseo_metadesc} />
@@ -16,7 +17,6 @@ export default class PostTemplate extends Component {
         )
     }
 }
-
 export const pageQuery = graphql`
     query currentPostQuery($id: String!) {
         wordpressPost(id: {eq: $id}) {
