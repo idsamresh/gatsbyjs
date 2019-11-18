@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://idsamresh.github.io/gatsbyjs/sitemap.xml
+Host: https://idsamresh.github.io
