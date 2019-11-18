@@ -5,6 +5,7 @@ module.exports = {
     title: `IDS Logic`,
     description: `This is the website description.`,
     author: `@idslogic`,
+    siteUrl: `https://idsamresh.github.io/gatsbyjs`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -80,5 +81,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://idsamresh.github.io/gatsbyjs',
+        sitemap: 'https://idsamresh.github.io/gatsbyjs/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }

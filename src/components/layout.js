@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a target="_blank" href="https://www.idslogic.com/">IDS Logic</a>
+          <a target="_blank" rel="noopener" href="https://www.idslogic.com/">IDS Logic</a>
         </footer>
       </div>
     </>
